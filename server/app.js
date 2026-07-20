@@ -23,4 +23,8 @@ app.use("/api/employees", employeeRoutes);
 
 app.use("/api/admin", authRoutes);
 
+app.get("/", (req, res) => {
+  res.json({ message: "API is running" });
+});
+
 export default app;
